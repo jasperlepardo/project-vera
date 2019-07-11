@@ -1,0 +1,59 @@
+---
+layout: default
+
+
+
+hasBackButton: false
+hasSearchButton: false
+hasHeadingTitleSmall: 
+hasHeadingTitle: false
+hasSearchBar: false
+hasHeadingTitle: true
+heading-title: Projects
+image-url: https://www.attendmia.com/wp-content/uploads/2019/02/mia19_digitaltwin01.jpg
+
+
+
+hasHeaderMenu: true
+---
+
+<div class="row card-scrollable">
+
+  {% for project in site.projects %}
+    <a class="card" href="{{ project.url }}">
+      <div class="card-img-wrapper">
+        <img class="card-img" src="{{ project.image-url }}" alt="" />
+      </div>
+      <div class="card-body">
+        <h6 class="card-title h4">{{ project.heading-title }}</h6>
+        <p class="card-text">Digital project delivery with Augmented Reality / Virtual Reality technology.</p>
+        <hr class="dashed">
+        <p>Top Recommended</p>
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item">
+            <img class="rounded-circle" src="https://cdn.pixabay.com/photo/2017/07/18/23/23/user-2517433_960_720.png" alt="" width="32" height="32">
+          </li>
+          <li class="list-inline-item">
+            <img class="rounded-circle" src="https://cdn.pixabay.com/photo/2017/07/18/23/23/user-2517433_960_720.png" alt="" width="32" height="32">
+          </li>
+          <li class="list-inline-item">
+            <img class="rounded-circle" src="https://cdn.pixabay.com/photo/2017/07/18/23/23/user-2517433_960_720.png" alt="" width="32" height="32">
+          </li>
+          <li class="list-inline-item">
+            <img class="rounded-circle" src="https://cdn.pixabay.com/photo/2017/07/18/23/23/user-2517433_960_720.png" alt="" width="32" height="32">
+          </li>
+          <li class="list-inline-item">
+            <img class="rounded-circle" src="https://cdn.pixabay.com/photo/2017/07/18/23/23/user-2517433_960_720.png" alt="" width="32" height="32">
+          </li>
+        </ul>
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-link" href="">Open Project</button>
+        <button class="btn btn-link" href="">Approve</button>
+      </div>
+    </a>
+  {% endfor %}
+
+  <div class="spacer"></div>
+
+</div>

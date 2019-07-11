@@ -1,0 +1,14 @@
+- text: Home
+  icon: 
+  icon-text: 
+  url: home.html
+
+- text: Projects
+  icon: 
+  icon-text: 
+  url: projects/
+
+- text: Employees
+  icon: 
+  icon-text: 
+  url: employees/

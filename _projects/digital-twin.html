@@ -1,0 +1,89 @@
+---
+layout: projects
+
+hasBackButton: true
+hasSearchButton: false
+hasHeadingTitleSmall: 
+hasHeadingTitle: false
+hasSearchBar: false
+hasHeadingTitle: true
+heading-title: Digital Twin
+image-url: https://www.attendmia.com/wp-content/uploads/2019/02/mia19_digitaltwin01.jpg
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="lead">Product Owner (1)</p>
+<div class="card-columns">
+  {% assign employees = site.employees | where: "project", "digital-twin" | where: "position", "product-owner" %}
+  {% for employee in employees %}
+    <a class="card card-draggable border-0 rounded shadow-sm" href="{{ site.baseurl }}{{ employee.url }}" data-toggle="modal" data-target="#{{ employee.employee-number }}" data-remote="{{ site.baseurl }}{{ employee.url }}">
+      <div class="card-body">
+        <div class="media profile">
+          <img class="rounded-circle mr-3" src="https://ui-avatars.com/api/?name={{ employee.first-name }}+{{ employee.last-name }}?background=D9D9D9&color=666666" alt="" width="48" height="48" />
+          <div class="media-body align-self-center">
+            <h6 class="profile-name">{{ employee.first-name }} {{ employee.last-name }}</h6>
+            <p class="profile-position">{{ employee.title }}</p>
+            <span class="badge badge-light">95% Matched</span>
+          </div>
+        </div>
+      </div>
+    </a>
+  {% endfor %}
+</div>
+
+<p class="lead">UI/UX Designer (2)</p>
+<div class="card-columns">
+  {% assign employees = site.employees | where: "project", "digital-twin" | where: "position", "designer" %}
+  {% for employee in employees %}
+    <div class="card card-draggable border-0 rounded shadow-sm">
+      <div class="card-body">
+        <div class="media profile">
+          <img class="rounded-circle mr-3" src="https://ui-avatars.com/api/?name={{ employee.first-name }}+{{ employee.last-name }}?background=D9D9D9&color=666666" alt="" width="48" height="48" />
+          <div class="media-body align-self-center">
+            <h6 class="profile-name">{{ employee.first-name }} {{ employee.last-name }}</h6>
+            <p class="profile-position">{{ employee.title }}</p>
+            <span class="badge badge-light">95% Matched</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+
+<p class="lead">Developers (3)</p>
+<div class="card-columns">
+  {% assign employees = site.employees | where: "project", "digital-twin" | where: "position", "developer" %}
+  {% for employee in employees %}
+    <div class="card card-draggable border-0 rounded shadow-sm">
+      <div class="card-body">
+        <div class="media profile">
+          <img class="rounded-circle mr-3" src="https://ui-avatars.com/api/?name={{ employee.first-name }}+{{ employee.last-name }}?background=D9D9D9&color=666666" alt="" width="48" height="48" />
+          <div class="media-body align-self-center">
+            <h6 class="profile-name">{{ employee.first-name }} {{ employee.last-name }}</h6>
+            <p class="profile-position">{{ employee.title }}</p>
+            <span class="badge badge-light">95% Matched</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+
+
+
+
+

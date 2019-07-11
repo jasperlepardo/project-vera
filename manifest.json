@@ -1,0 +1,10 @@
+{
+  "name": "Voice Enabled Resource Allocator",
+  "short_name": "VERA",
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "orientation": "landscape",
+  "scope": "/",
+  "start_url": "https://www.jsprlprd.xyz/project-vera/"
+}

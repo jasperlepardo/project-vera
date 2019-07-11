@@ -1,0 +1,94 @@
+---
+layout: base
+---
+
+<nav class="navbar navbar-expand navbar-light bg-white fixed-bottom">
+  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    {% include components/molecules/nav-menu.html
+      nav-type="navbar-nav"
+      isLarge=""
+      isStacked=""
+      isJustified=""
+      list-value-name=site.data.navigation.global
+      hasIcon="false"
+    %}
+    <div class="dropdown ml-auto">
+      <a class="nav-link" data-toggle="dropdown" href="" aria-expanded="false">
+        <div class="media">
+          <div class="media-body align-self-center">
+            Jeanine
+          </div>
+          <div class="ml-2">
+            <img class="rounded-circle" src="https://cdn.pixabay.com/photo/2017/07/18/23/23/user-2517433_960_720.png" width="32" height="32" alt="">
+          </div>
+        </div>
+      </a>
+      <div class="dropdown-menu dropdown-menu-right">
+        <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt mr-2"></i>Logout</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+<header class="heading fixed-top">
+  <div class="heading-menu d-flex align-items-start align-items-center justify-content-between">
+    <div class="heading-menu-left">
+      {% if page.hasBackButton %}
+        <button class="heading-menu-btn" onclick="window.history.go(-1); return false;" type="button"><i class="material-icons">arrow_back</i></button>
+      {% endif %}
+    </div>
+    {% if page.hasHeadingTitleSmall == "always-visible" %}
+      <span class="heading-menu-title d-block">{{ page.heading-title }}</span>
+      {% else %}
+      <span class="heading-menu-title">{{ page.heading-title }}</span>
+    {% endif %}
+    <div class="heading-menu-right">
+      {% if page.hasSearchButton %}
+        <a class="heading-menu-btn" href="{{ site.baseurl }}/search.html"><i class="material-icons">search</i></a>
+      {% endif %}
+    </div>
+  </div>
+  {% if page.hasHeadingTitle %}
+    <h1 class="heading-title">{{ page.heading-title }}</h1>
+  {% endif %}
+  {% if page.hasSearchBar %}
+    <div class="heading-search shadow-sm">
+      <input class="form-control border-0" type="search" placeholder="Search" aria-label="Search">
+    </div>
+  {% endif %}
+</header>
+
+
+
+
+
+
+<!-- 
+
+<header class="heading fixed-top">
+  <div class="container-fluid">
+    <h1 class="heading-title">{{ page.heading-title }}</h1>
+    {% if page.hasHeaderMenu %}
+      {% include components/molecules/nav-tabs.html
+        nav-type="nav-tabs"
+        isLarge=""
+        isStacked=""
+        isJustified=""
+        list-value-name=site.data.navigation.projects
+        hasIcon="false"
+      %}
+    {% endif %}
+  </div>
+</header> -->
+
+<main class="container-fluid" id="main-panel">
+  {{ content }}
+</main>
+
+<a class="fab" href=""><i class="material-icons">mic_none</i></a>

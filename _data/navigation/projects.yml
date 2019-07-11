@@ -1,0 +1,19 @@
+- text: All
+  icon: 
+  icon-text: 
+  url: all-projects
+
+- text: Open
+  icon: 
+  icon-text: 
+  url: open-projects
+
+- text: New
+  icon: 
+  icon-text: 
+  url: new-projects
+
+- text: Close
+  icon: 
+  icon-text: 
+  url: close-projects
