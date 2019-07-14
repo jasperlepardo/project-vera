@@ -416,9 +416,18 @@ a.card {
   margin-bottom: 0;
 }
 
+
+.profile-name {
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  text-overflow: ellipsis;
+}
+
 .profile-position {
   color: #666666;
 }
+
 
 
 
